@@ -37,7 +37,7 @@ notesRouter.delete('/:id', authHandler, (req, res, next) => {
 notesRouter.post('/', authHandler, async (req, res, next) => {
   const note = req.body;
 
-  const { content, important, userId } = note;
+  const { content, important, user: userId } = note;
 
   let user;
   try {
