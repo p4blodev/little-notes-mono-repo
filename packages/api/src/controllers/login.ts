@@ -6,6 +6,7 @@ import { envConfig } from '../utils';
 
 const loginRouter = express.Router();
 
+// eslint-disable-next-line @typescript-eslint/no-misused-promises
 loginRouter.post('/', async (req, res) => {
   const { username, password } = req.body;
 
@@ -27,7 +28,7 @@ loginRouter.post('/', async (req, res) => {
 
   const token = jwt.sign(userForToken, envConfig.SECRET!);
 
-  res.status(200).send({ token, username: user.username, name: user.name });
+  res.status(200).send({ token, username: user.username, userId: user._id });
 });
 
 export default loginRouter;
