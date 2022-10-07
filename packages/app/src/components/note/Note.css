@@ -1,0 +1,24 @@
+.note {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 0px rgba(175, 158, 242, 0.75);
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+  padding: 0.5em 1em;
+}
+.note-button {
+  all: unset;
+
+  padding: 0 0.5em;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd6fabf;
+  border: none;
+}
+.header-note {
+  font-size: 0.8em;
+  color: lightgray;
+}

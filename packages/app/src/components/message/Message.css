@@ -1,0 +1,10 @@
+.message-error {
+  text-align: center;
+  background-color: red;
+  opacity: .7;
+  padding: 0.5em 1em;
+  color: #fff;
+  border: 2px solid lightblue;
+  border-radius: 5px;
+  max-width: 100%;
+}
