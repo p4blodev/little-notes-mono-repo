@@ -26,7 +26,7 @@ export default function Login() {
     <form className="login-container" onSubmit={handleSubmit}>
       <div className="login-items">
         <label>
-          Usernameeeeeee
+          Username
           <div>
             <input
               className="login-input"
