@@ -11,7 +11,7 @@
   "scripts": {
     "build": "npm run build --workspace=packages/app",
     "start": "npm run start --workspace=packages/api",
-    "dev:api": "npm run build && npm run dev --workspace=api",
+    "dev:api": "npm run build && npm run dev --workspace=packages/api",
     "lint": "npm run lint --workspace=packages/app && npm run lint --workspace=packages/api"
   },
   "engines": {
