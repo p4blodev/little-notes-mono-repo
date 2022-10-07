@@ -16,8 +16,9 @@ const getConfig = () => {
 };
 
 export const postNote = async (note: noteType) => {
+  const config = getConfig();
   return await axios
-    .post(API_BASE, note)
+    .post(API_BASE, note, config)
     .then((response) => {
       return response.data;
     })
@@ -27,8 +28,9 @@ export const postNote = async (note: noteType) => {
 };
 
 export const putNote = async (note: noteType) => {
+  const config = getConfig();
   return await axios
-    .put(`${API_BASE}/${note.id}`, note)
+    .put(`${API_BASE}/${note.id}`, note, config)
     .then((response) => {
       return response.data;
     })
