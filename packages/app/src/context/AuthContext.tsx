@@ -4,7 +4,7 @@ import { authType } from '../models/auth.types';
 
 const INITIAL_DATA: authType = {
   authenticated: false,
-  name: '',
+  userId: '',
   token: '',
   username: '',
 };

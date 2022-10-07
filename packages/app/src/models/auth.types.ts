@@ -1,6 +1,6 @@
 export interface authType {
   authenticated: boolean;
-  name: string;
+  userId?: string;
   token: string;
   username: string;
 }

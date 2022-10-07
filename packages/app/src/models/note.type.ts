@@ -3,4 +3,5 @@ export interface noteType {
   content: string;
   date?: Date;
   important: boolean;
+  user?: string;
 }
